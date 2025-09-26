@@ -19,9 +19,9 @@ A beautiful, responsive, and interactive website for a fictional pet adoption ce
 ## 🚀 Live Demo
 
 🌍 **View the live website:**  
-[https://your-username.github.io/happy-paws-adoption](https://your-username.github.io/happy-paws-adoption)
+[https://your-username.github.io/happy-paws-adoption](https://your-username.github.io/happy-paws-adoption](https://rayshee254.github.io/plp-webtechnologies-classroom-july2025-july-2025-final-project-and-deployment-Final-Project-and-Depl/)
 
-> 💡 *Replace `your-username` with your actual GitHub username*
+
 
 ---
 
