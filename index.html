@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Paws Adoption Center</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">Happy Paws</div>
+            <ul class="nav-links">
+                <li><a href="#home" class="nav-link active">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Home Section -->
+        <section id="home" class="section active">
+            <div class="hero">
+                <h1>Find Your Perfect Companion</h1>
+                <p>Give a loving home to pets in need</p>
+            </div>
+            
+            <div class="featured-pets">
+                <h2>Featured Pets</h2>
+                <div class="filter-controls">
+                    <button class="filter-btn active" data-filter="all">All Pets</button>
+                    <button class="filter-btn" data-filter="dog">Dogs</button>
+                    <button class="filter-btn" data-filter="cat">Cats</button>
+                    <button class="filter-btn" data-filter="other">Other</button>
+                </div>
+                <div id="pets-container">
+                    <!-- Pet cards will be populated by JavaScript -->
+                </div>
+            </div>
+
+            <div class="adoption-info">
+                <h2>Adoption Process</h2>
+                <div class="info-cards">
+                    <div class="info-card">
+                        <h3>1. Browse</h3>
+                        <p>View our available pets and find your perfect match</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>2. Apply</h3>
+                        <p>Fill out our adoption application form</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>3. Meet</h3>
+                        <p>Schedule a meeting with your chosen pet</p>
+                    </div>
+                    <div class="info-card">
+                        <h3>4. Adopt</h3>
+                        <p>Take your new friend home!</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section">
+            <div class="about-content">
+                <h2>Our Mission</h2>
+                <p>At Happy Paws Adoption Center, we believe every pet deserves a loving home. Our mission is to rescue, rehabilitate, and rehome abandoned and neglected animals while promoting responsible pet ownership.</p>
+                
+                <h3>Our Team</h3>
+                <div class="team-grid">
+                    <div class="team-member">
+                        <h4>Dr. Sarah Wambui</h4>
+                        <p>Veterinarian & Founder</p>
+                        <p>With over 15 years of experience in animal welfare, Dr. Johnson leads our medical team.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>James Ochieng</h4>
+                        <p>Adoption Coordinator</p>
+                        <p>Mike helps match pets with their perfect forever families.</p>
+                    </div>
+                    <div class="team-member">
+                        <h4>Emily Robinson</h4>
+                        <p>Animal Care Specialist</p>
+                        <p>Emily ensures all our pets receive the best care and socialization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section">
+            <div class="contact-content">
+                <h2>Adoption Inquiry Form</h2>
+                <form id="adoption-form" class="contact-form">
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="pet-interest">Interested in Pet</label>
+                        <select id="pet-interest" name="pet-interest">
+                            <option value="">Select a pet</option>
+                            <option value="dog">Dogs</option>
+                            <option value="cat">Cats</option>
+                            <option value="other">Other Animals</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="submit-btn">Submit Inquiry</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; Happy Paws Adoption Center. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

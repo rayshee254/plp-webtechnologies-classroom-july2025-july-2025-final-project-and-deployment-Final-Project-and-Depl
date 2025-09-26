@@ -1,0 +1,319 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    color: #212529;
+    background-color: #F8F9FA;
+}
+
+
+.navbar {
+    background: #5E60CE;
+    padding: 16px 32px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.nav-brand {
+    font-size: 28.8px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 32px;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding: 8px 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    background-color: #43adf4;
+}
+
+/* Sections */
+.section {
+    display: none;
+    padding: 32px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section.active {
+    display: block;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    padding: 48px 0;
+    background: linear-gradient(135deg, #5E60CE 0%, #4EA8DE 100%);
+    color: white;
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+
+.featured-pets {
+    margin: 32px 0;
+}
+
+.featured-pets h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #5E60CE;
+}
+
+#pets-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 16px;
+}
+
+
+.pet-card {
+    
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.3s;
+    height: fit-content;
+}
+
+.pet-card:hover {
+    transform: translateY(-5px);
+}
+
+.pet-image {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+.pet-info {
+    padding: 24px;
+}
+
+.pet-info h3 {
+    color: #5E60CE;
+    margin-bottom: 8px;
+}
+
+.pet-type {
+    display: inline-block;
+    padding: 4px 12px;
+    background: #72EFDD;
+    color: #212529;
+    border-radius: 15px;
+    font-size: 12.8px;
+    margin-bottom: 16px;
+}
+
+
+.adoption-info {
+    margin: 48px 0;
+}
+
+.adoption-info h2 {
+    text-align: center;
+    margin-bottom: 32px;
+    color: #5E60CE;
+}
+
+.info-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 24px;
+}
+
+.info-card {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.info-card h3 {
+    color: #4EA8DE;
+    margin-bottom: 16px;
+}
+
+
+.about-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.about-content h2,
+.about-content h3 {
+    color: #5E60CE;
+    margin-bottom: 16px;
+}
+
+.about-content p {
+    margin-bottom: 32px;
+    line-height: 1.8;
+}
+
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 32px;
+    margin-top: 32px;
+}
+
+.team-member {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.team-member h4 {
+    color: #4EA8DE;
+    margin-bottom: 8px;
+}
+
+
+.contact-content {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-form {
+    background: white;
+    padding: 32px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.form-group {
+    margin-bottom: 24px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 500;
+    color: #5E60CE;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 2px solid #e1e8ed;
+    border-radius: 5px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #4EA8DE;
+}
+
+.submit-btn {
+    background: #4EA8DE;
+    color: white;
+    padding: 16px 32px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background: #5E60CE;
+}
+
+/* Filter Controls */
+.filter-controls {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+    flex-wrap: wrap;
+}
+
+.filter-btn {
+    padding: 8px 24px;
+    border: 2px solid #4EA8DE;
+    background: white;
+    color: #4EA8DE;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+    background: #4EA8DE;
+    color: white;
+}
+
+/* Footer */
+footer {
+    background: #5E60CE;
+    color: white;
+    text-align: center;
+    padding: 32px;
+    margin-top: 48px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    .nav-links {
+        gap: 16px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .info-cards {
+        grid-template-columns: 1fr;
+    }
+
+    #pets-container {
+        flex-direction: column;
+    }
+
+    .pet-card {
+        min-width: auto;
+    }
+}
